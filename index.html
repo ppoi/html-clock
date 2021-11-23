@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>clock</title>
+  <style>
+    body {
+      background-color: #091921;
+    }
+  </style>
+  <link rel="stylesheet" href="./html-clock.css">
+</head>
+
+<body>
+  <section class="clock"></section>
+  <script type="application/javascript" src="./html-clock.js"></script>
+  <script>
+    let clock = new Clock(document.querySelector('.clock'), {size:'600px'});
+    clock.start();
+  </script>
+</body>
+
+</html>
