@@ -4,7 +4,7 @@ class Clock {
   constructor(elm, opts) {
     elm.hidden = true;
     elm.innerHtml = '';
-    if(elm.classList.contains('clock')) {
+    if(!elm.classList.contains('clock')) {
       elm.classList.add('clock');
     }
 
@@ -48,4 +48,8 @@ class Clock {
     this.root.style.width = this.opts.size;
     this.root.style.height = this.opts.size;
   }
+}
+
+export {
+  Clock
 }
