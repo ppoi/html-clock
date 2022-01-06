@@ -1,18 +1,14 @@
 {
   "name": "html-clock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "HTML component of Analog Clock.",
-  "main": "html-clock.js",
+  "main": "lib/html-clock.js",
   "devDependencies": {
-    "@open-wc/rollup-plugin-html": "^1.2.5",
-    "postcss": "^8.4.5",
-    "rollup": "^2.61.1",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.45.0"
+    "vite": "^2.7.10"
   },
   "scripts": {
-    "dev": "npx rollup -c"
+    "dev": "npx vite",
+    "build": "npx vite build"
   },
   "repository": {
     "type": "git",
